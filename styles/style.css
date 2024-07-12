@@ -1,3 +1,28 @@
-h1{
-    color: aqua;
+
+*{
+    text-align: center;
+}
+.houkago img{
+    height: 250px;
+}
+.neiro img{
+    height: 250px;
+}
+.ohanami img{
+    height: 250px;
+}
+.samui img{
+    height: 250px;
+}
+.kari img{
+    height: 250px;
+}
+.tiaki img{
+    height: 250px;
+}
+.ika img{
+    height: 250px;
+}
+.ogata img{
+    height: 250px;
 }
