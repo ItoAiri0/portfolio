@@ -3,37 +3,42 @@
     text-align: center;
 }
 .houkago img{
-    height: 250px;
+    height: 200px;
 }
 .neiro img{
-    height: 250px;
+    height: 200px;
 }
 .ohanami img{
-    height: 250px;
+    height: 200px;
 }
 .samui img{
-    height: 250px;
+    height: 200px;
 }
 .kari img{
-    height: 250px;
+    height: 200px;
 }
 .tiaki img{
-    height: 250px;
+    height: 200px;
 }
 .ika img{
-    height: 250px;
+    height: 200px;
 }
 .ogata img{
-    height: 250px;
+    height: 200px;
+}
+
+.originalart{
+    align-items: center;
 }
 .originalart-{
     display: grid;
    
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: minmax(250px, auto);    
-    grid-template-areas: /* 複数行に渡って配置領域を文字列で表現する(なにも配置したくない箇所には「.」を書いておく) */
-    "houkago neiro"
-    "ohanami samui  "
-    "kari .";
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(2,auto);
+    grid-template-areas: 
+    "houkago neiro" 
+    "ohanami samui  " 
+    "kari ." ;
+    grid-gap:40px 10px;
+    place-items: center;*
+    
 }
