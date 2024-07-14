@@ -26,3 +26,14 @@
 .ogata img{
     height: 250px;
 }
+.originalart-{
+    display: grid;
+   
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(250px, auto);    
+    grid-template-areas: /* 複数行に渡って配置領域を文字列で表現する(なにも配置したくない箇所には「.」を書いておく) */
+    "houkago neiro"
+    "ohanami samui  "
+    "kari .";
+    grid-column-gap: 10px;
+}
