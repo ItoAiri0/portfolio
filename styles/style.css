@@ -2,29 +2,51 @@
 *{
     text-align: center;
 }
+.pattern {
+    height: auto;
+    background: repeating-linear-gradient(90deg, #fafae7, #fafae7 30px, #acdde9 0, #acdde9 45px
+    );
+    overflow: hidden;
+    z-index: 0;
+    
+  }
+  .houkago{
+    padding: 10px;
+    background-color: #F7F9F9;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(11, 95, 134, 0.5);
+  }
 .houkago img{
     height: 200px;
+    text-align: center;
 }
 .neiro img{
     height: 200px;
+    text-align: center;
 }
 .ohanami img{
     height: 200px;
+    text-align: center;
 }
 .samui img{
     height: 200px;
+    text-align: center;
 }
 .kari img{
     height: 200px;
+    text-align: center;
 }
 .tiaki img{
     height: 200px;
+    text-align: center;
 }
 .ika img{
     height: 200px;
+    text-align: center;
 }
 .ogata img{
     height: 200px;
+    text-align: center;
 }
 
 .originalart{
