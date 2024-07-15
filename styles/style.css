@@ -4,17 +4,92 @@
 }
 .pattern {
     height: auto;
-    background: repeating-linear-gradient(90deg, #fafae7, #fafae7 30px, #acdde9 0, #acdde9 45px
-    );
-    overflow: hidden;
-    z-index: 0;
+  background-color: #fff;
+  background-image: linear-gradient(#d4d4d4 1.6px, transparent 1.6px),
+    linear-gradient(to right,#d4d4d4 1.6px, #fff 1.6px);
+  background-size: 32px 32px;
+  background-position: 50% 50%;
+    z-index: -10;
     
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #fff;
+    position: fixed;
+    align-items: center;
+    margin: auto;
+    z-index: 0;
+    position:fixed;  /*ヘッダーの位置を固定*/
+    top:0;  /*ヘッダーの位置を固定（上0）*/
+    left:0; /*ヘッダーの位置を左固定（左０）*/
+  }
+  .hero {
+    overflow: hidden;    /* 透かし画像のArticleDetail_MainImage_Divからあふれた部分を表示しない */
+    height: 400px;       /* 高さ。好みに合わせて調整。 */
+    position: relative;  /* メイン画像、透かし画像、黒っぽくするためのHTML要素を重ねて表示するために必要 */
+}
+.baokasigazou img {
+    background-size: cover;       /* BackgroundImageを要素を覆うように(長辺を基準に)表示 */
+    background-position: center;  /* BackgroundImageの表示位置。中央を基準に表示 */
+    height: 400px;
+    filter: blur(5px);  
+    z-index: -2;          /* 画像のぼかし具合 */
+}
+/* 後ろの画像を黒っぽくすためのHTML要素 */
+.kuro{
+    /* 親要素を覆うように表示するための設定 */
+    position: absolute;  
+    top: 0px;          
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+
+    
+    /* 背景を黒くする。
+     * 完全に黒くすると透かし画像が見えなくなるので、透明度を0.8に設定 */
+    background-color: rgba(0,0,0,0.8);
+}
+  .maingazou img{
+     height: 500px;
+  }
+
+  .profile img{
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
   }
   .houkago{
     padding: 10px;
     background-color: #F7F9F9;
     border-radius: 8px;
-    box-shadow: 0px 3px 15px rgba(11, 95, 134, 0.5);
+    box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+  }
+  .neiro{
+    padding: 10px;
+    background-color: #F7F9F9;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+  }
+  .ohanami{
+    padding: 10px;
+    background-color: #F7F9F9;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+  }
+  .samui{
+    padding: 10px;
+    background-color: #F7F9F9;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+  }
+  .kari{
+    padding: 10px;
+    background-color: #F7F9F9;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
   }
 .houkago img{
     height: 200px;
