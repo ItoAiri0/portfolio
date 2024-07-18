@@ -4,6 +4,7 @@
 }
 .pattern {
     height: auto;
+    width: 100%;
   background-color: #fff;
   background-image: linear-gradient(#d4d4d4 1.6px, transparent 1.6px),
     linear-gradient(to right,#d4d4d4 1.6px, #fff 1.6px);
@@ -55,14 +56,55 @@
   .maingazou img{
      height: 500px;
   }
-  #profile{
-    font-size: 2rem;
+  .profile{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    align-items: center;
+    margin: 50px;
+    background-color: rgba(255,255,255,0.5);
+    border: solid 3px;
+    border-radius: 10px;/*角の丸み*/
+    padding: 20px;
+  }
+  .profile a{
+    font-size: 2.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 800;
   }
   .profile img{
     height: 100px;
-    width: auto;
+    
     border-radius: 50%;
     align-items: center;
+  }
+  .profile h1{
+    font-size: 1.5rem;
+  }
+  .works{
+    background-color: rgba(255,255,255,0.5);
+    border: solid 3px;
+    border-radius: 10px;/*角の丸み*/
+  }
+  .works a{
+    font-size: 2.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 800;
+  }
+  .originalart h1{
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    top:-40px;
+    left:20px;
+    background-color: #fff;
   }
   .houkago{
     padding: 10px;
@@ -95,23 +137,23 @@
     box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
   }
 .houkago img{
-    height: 200px;
+    height: 150px;
     text-align: center;
 }
 .neiro img{
-    height: 200px;
+    height: 150px;
     text-align: center;
 }
 .ohanami img{
-    height: 200px;
+    height: 150px;
     text-align: center;
 }
 .samui img{
-    height: 200px;
+    height: 150px;
     text-align: center;
 }
 .kari img{
-    height: 200px;
+    height: 150px;
     text-align: center;
 }
 .tiaki{
@@ -133,21 +175,27 @@
     box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
 }
 .tiaki img{
-    height: 200px;
+    height: 150px;
     text-align: center;
 }
 .ika img{
-    height: 200px;
+    height: 170px;
     text-align: center;
 }
 .ogata img{
-    height: 200px;
+    height: 150px;
     text-align: center;
+    
 }
 
 .originalart{
     align-items: center;
+    border: dashed 3px rgba(0,0,0, 0.5);
+    margin:20px 20px 0 20px;
+    padding: 30px 0 50px 0;
+    position: relative;
 }
+
 .originalart-{
     display: grid;
    
@@ -156,16 +204,58 @@
     "houkago neiro" 
     "ohanami samui  " 
     "kari ." ;
-    grid-gap:40px 10px;
+    grid-gap:20px 1px;
     place-items: center;
 }
+
 .fanart-{
     display: grid;
    
     grid-template-columns: repeat(2,auto);
     grid-template-areas: 
     "tiaki ika" 
-    "ogata ogata" ;
-    grid-gap:40px 10px;
+    ". ogata" ;
+    grid-gap:20px 10px;
     place-items: center;
 }
+.fanart h1{
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.my-social {
+    list-style: none; /* リストの・が邪魔なので消します */
+    display: flex; /* .my-social内部をフレキシブル表示に切り替え（標準で横並びになります） */
+    justify-content: center;
+    margin-top: 1.5rem; /* 上部に1.5文字分の外部余白を設定 */
+  }
+  /* class="my-social"の中のli */
+.my-social li {
+    line-height: 1; /* 文字高さを1文字分とする */
+    margin-right: 1rem; /* 右側に1文字分の外側余白をつける */
+    font-size: 2rem; /* アイコン(文字)のサイズを2文字分とする */
+  }
+  /* class="my-social"の中のliの中のa */
+.my-social li a {
+    display: inline-block; /* リンクテキストをインラインブロック要素として表示 */
+    text-decoration: none;  /* リンクテキストの装飾をなくす */
+    color: var(--text-color);  /* 文字色をデフォルトのリンクカラーからこの文書の文字色へ変更 */
+    cursor: pointer; /* この要素にマウスオーバーしたとき、マウスカーソルを指に変更 */
+    /* 変更 : transition: 1s color; ↓に変更 */
+    transition: 0.5s transform, 0.5s color;
+  
+    /* 下記追加分 */
+    /* 文字の背景にグラデーションを設定しておきます。（現時点ではcolorに色が付いているので、このグラデーションは見えません。） */
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  /* class="my-social"の中のliの中のaにマウスカーソルが乗った時 */
+.my-social li a:hover {
+    color: transparent; /* 背景に設定したグラデーションが表示されるように文字色を透明（transparent）にする */
+    transform: scale(1.5); /* 要素を1.5倍に変形させます */
+  }
