@@ -87,6 +87,7 @@
     background-color: rgba(255,255,255,0.5);
     border: solid 3px;
     border-radius: 10px;/*角の丸み*/
+    padding-top: 20px;
   }
   .works a{
     font-size: 2.5rem;
@@ -207,7 +208,13 @@
     grid-gap:20px 1px;
     place-items: center;
 }
-
+.fanart{
+    align-items: center;
+    border: dashed 3px rgba(0,0,0, 0.5);
+    margin:20px 20px 20px 20px;
+    padding: 30px 0 50px 0;
+    position: relative;
+}
 .fanart-{
     display: grid;
    
@@ -224,9 +231,20 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 500;
+    position: absolute;
+    top:-40px;
+    left:20px;
+    background-color: #fff;
+
 }
 
-
+.contact a{
+    font-size: 2.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 800;
+}
 .my-social {
     list-style: none; /* リストの・が邪魔なので消します */
     display: flex; /* .my-social内部をフレキシブル表示に切り替え（標準で横並びになります） */
