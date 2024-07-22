@@ -131,12 +131,6 @@
     border-radius: 8px;
     box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
   }
-  .kari{
-    padding: 10px;
-    background-color: #F7F9F9;
-    border-radius: 8px;
-    box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
-  }
 .houkago img{
     height: 150px;
     text-align: center;
@@ -203,8 +197,7 @@
     grid-template-columns: repeat(2,auto);
     grid-template-areas: 
     "houkago neiro" 
-    "ohanami samui  " 
-    "kari ." ;
+    "ohanami samui  " ;
     grid-gap:20px 1px;
     place-items: center;
 }
