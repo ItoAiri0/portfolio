@@ -178,7 +178,7 @@ header .nav .menu li a{
     text-align: center;
 }
 .ika img{
-    height: 170px;
+    height: 150px;
     text-align: center;
 }
 .ogata img{
@@ -219,7 +219,7 @@ header .nav .menu li a{
     grid-template-areas: 
     "tiaki ika" 
     ". ogata" ;
-    grid-gap:20px 10px;
+    grid-gap:20px 0px;
     place-items: center;
 }
 .fanart h1{
@@ -306,5 +306,44 @@ header .nav .menu li a{
     }
     header .nav .menu li a {
         font-size: 0.95em; /* フォントサイズを中くらいに */
+    }
+}
+
+/* PC用のスタイル */
+@media (min-width: 901px){
+    
+    .houkago img{
+        height: 500px;
+        text-align: center;
+    }
+    .neiro img{
+        height: 500px;
+        text-align: center;
+    }
+    .ohanami img{
+        height: 500px;
+        text-align: center;
+    }
+    .samui img{
+        height: 500px;
+        text-align: center;
+    }
+    .kari img{
+        height: 500px;
+        text-align: center;
+    }
+    
+    .tiaki img{
+        height: 500px;
+        text-align: center;
+    }
+    .ika img{
+        height: 540px;
+        text-align: center;
+    }
+    .ogata img{
+        height: 500px;
+        text-align: center;
+        
     }
 }
