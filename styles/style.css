@@ -28,14 +28,15 @@
   }
   .maingazou{
     position: relative;
+    display: inline-block;
+     font-size: 0;
+     line-height: 0;
   }
   .maingazou img{
      height: 1080px;
      width:1920px;
      object-fit: cover;
-     display: inline-block;
-     font-size: 0;
-     line-height: 0;
+     
   }
   .maingazou::after{
     position: absolute;
