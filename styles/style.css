@@ -26,35 +26,24 @@
     top:0;  /*ヘッダーの位置を固定（上0）*/
     left:0; /*ヘッダーの位置を左固定（左０）*/
   }
-  .hero {
-    overflow: hidden;    /* 透かし画像のArticleDetail_MainImage_Divからあふれた部分を表示しない */
-    height: 400px;       /* 高さ。好みに合わせて調整。 */
-    position: relative;  /* メイン画像、透かし画像、黒っぽくするためのHTML要素を重ねて表示するために必要 */
-}
-.baokasigazou img {
-    background-size: cover;       /* BackgroundImageを要素を覆うように(長辺を基準に)表示 */
-    background-position: center;  /* BackgroundImageの表示位置。中央を基準に表示 */
-    height: 400px;
-    filter: blur(5px);  
-    z-index: -2;          /* 画像のぼかし具合 */
-}
-/* 後ろの画像を黒っぽくすためのHTML要素 */
-.kuro{
-    /* 親要素を覆うように表示するための設定 */
-    position: absolute;  
-    top: 0px;          
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    z-index: -1;
-
-    
-    /* 背景を黒くする。
-     * 完全に黒くすると透かし画像が見えなくなるので、透明度を0.8に設定 */
-    background-color: rgba(0,0,0,0.8);
-}
+  .maingazou{
+    position: relative;
+  }
   .maingazou img{
-     height: 500px;
+     height: 1080px;
+     width:1920px;
+     object-fit: cover;
+     display: inline-block;
+     font-size: 0;
+     line-height: 0;
+  }
+  .maingazou::after{
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    -moz-box-shadow: inset 0px 0px 15px 15px #fff;
+    -webkit-box-shadow: inset 0px 0px 15px 15px #fff;
+    box-shadow: inset 0px 0px 15px 15px #fff;
+    content: " ";
   }
   .profile{
     display: flex;
@@ -230,7 +219,9 @@
     background-color: #fff;
 
 }
-
+.contact{
+    padding:100px;
+}
 .contact a{
     font-size: 2.5rem;
     font-family: "Work Sans", sans-serif;
