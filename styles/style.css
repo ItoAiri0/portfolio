@@ -244,18 +244,81 @@ header .nav .menu li a{
     background-color: #F7F9F9;
     border-radius: 8px;
     box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+    position: relative;
+}
+.mask5 .caption5 {
+	font-size:0.5rem;
+	text-align: center;
+	padding-top:50%;
+	color:#fff;
+}
+.mask5 {
+	width:100%;
+	height:100%;
+	position:absolute;	/* 絶対位置指定 */
+	top:0;
+	left:0;
+	opacity:0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:	all 0.2s ease;
+}
+.tiaki:hover .mask5 {
+	opacity:		1;	/* マスクを表示する */
 }
 .ika{
     padding: 10px;
     background-color: #F7F9F9;
     border-radius: 8px;
     box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+    position: relative;
+}
+.mask6 .caption6 {
+	font-size:0.5rem;
+	text-align: center;
+	padding-top:50%;
+	color:#fff;
+}
+.mask6 {
+	width:100%;
+	height:100%;
+	position:absolute;	/* 絶対位置指定 */
+	top:0;
+	left:0;
+	opacity:0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:	all 0.2s ease;
+}
+.ika:hover .mask6 {
+	opacity:		1;	/* マスクを表示する */
 }
 .ogata{
     padding: 10px;
     background-color: #F7F9F9;
     border-radius: 8px;
     box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+    position: relative;
+}
+.mask7 .caption7 {
+	font-size:0.5rem;
+	text-align: center;
+	padding-top:50%;
+	color:#fff;
+}
+.mask7 {
+	width:100%;
+	height:100%;
+	position:absolute;	/* 絶対位置指定 */
+	top:0;
+	left:0;
+	opacity:0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:	all 0.2s ease;
+}
+.ogata:hover .mask7 {
+	opacity:		1;	/* マスクを表示する */
 }
 .tiaki img{
     height: 150px;
@@ -441,13 +504,31 @@ header .nav .menu li a{
         height: 500px;
         text-align: center;
     }
+    .mask5 .caption5 {
+        font-size:1rem;
+        text-align: center;
+        padding-top:50%;
+        color:#fff;
+    }
     .ika img{
         height: 540px;
         text-align: center;
+    }
+    .mask6 .caption6 {
+        font-size:1rem;
+        text-align: center;
+        padding-top:50%;
+        color:#fff;
     }
     .ogata img{
         height: 500px;
         text-align: center;
         
+    }
+    .mask7 .caption7 {
+        font-size:1rem;
+        text-align: center;
+        padding-top:50%;
+        color:#fff;
     }
 }
