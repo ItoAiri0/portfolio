@@ -119,23 +119,23 @@ header .nav .menu li a{
     position: relative;
   }
   .mask1 .caption1 {
-	font-size:		130%;
-	text-align: 		center;
-	padding-top:		80px;
-	color:			#fff;
+	font-size:0.5rem;
+	text-align: center;
+	padding-top:50%;
+	color:#fff;
 }
 .mask1 {
-	width:			100%;
-	height:			100%;
-	position:		absolute;	/* 絶対位置指定 */
-	top:			0;
-	left:			0;
-	opacity:		0;	/* マスクを表示しない */
+	width:100%;
+	height:100%;
+	position:absolute;	/* 絶対位置指定 */
+	top:0;
+	left:0;
+	opacity:0;	/* マスクを表示しない */
 	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
 	-webkit-transition:	all 0.2s ease;
-	transition:		all 0.2s ease;
+	transition:	all 0.2s ease;
 }
-.houkago:hover .mask {
+.houkago:hover .mask1 {
 	opacity:		1;	/* マスクを表示する */
 }
   .neiro{
@@ -143,19 +143,82 @@ header .nav .menu li a{
     background-color: #F7F9F9;
     border-radius: 8px;
     box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+    position: relative;
   }
+  .mask2 .caption2 {
+	font-size:0.5rem;
+	text-align: center;
+	padding-top:50%;
+	color:#fff;
+}
+.mask2 {
+	width:100%;
+	height:100%;
+	position:absolute;	/* 絶対位置指定 */
+	top:0;
+	left:0;
+	opacity:0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:	all 0.2s ease;
+}
+.neiro:hover .mask2 {
+	opacity:		1;	/* マスクを表示する */
+}
   .ohanami{
     padding: 10px;
     background-color: #F7F9F9;
     border-radius: 8px;
     box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+    position: relative;
   }
+  .mask3 .caption3 {
+	font-size:0.5rem;
+	text-align: center;
+	padding-top:50%;
+	color:#fff;
+}
+.mask3 {
+	width:100%;
+	height:100%;
+	position:absolute;	/* 絶対位置指定 */
+	top:0;
+	left:0;
+	opacity:0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:	all 0.2s ease;
+}
+.ohanami:hover .mask3 {
+	opacity:		1;	/* マスクを表示する */
+}
   .samui{
     padding: 10px;
     background-color: #F7F9F9;
     border-radius: 8px;
     box-shadow: 0px 3px 15px rgba(0,0,0, 0.3);
+    position: relative;
   }
+  .mask4 .caption4 {
+	font-size:0.5rem;
+	text-align: center;
+	padding-top:50%;
+	color:#fff;
+}
+.mask4 {
+	width:100%;
+	height:100%;
+	position:absolute;	/* 絶対位置指定 */
+	top:0;
+	left:0;
+	opacity:0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:	all 0.2s ease;
+}
+.samui:hover .mask4 {
+	opacity:		1;	/* マスクを表示する */
+}
 .houkago img{
     height: 150px;
     text-align: center;
@@ -337,21 +400,41 @@ header .nav .menu li a{
         height: 500px;
         text-align: center;
     }
+    .mask1 .caption1 {
+        font-size:1rem;
+        text-align: center;
+        padding-top:50%;
+        color:#fff;
+    }
     .neiro img{
         height: 500px;
         text-align: center;
+    }
+    .mask2 .caption2 {
+        font-size:1rem;
+        text-align: center;
+        padding-top:50%;
+        color:#fff;
     }
     .ohanami img{
         height: 500px;
         text-align: center;
     }
+    .mask3 .caption3 {
+        font-size:1rem;
+        text-align: center;
+        padding-top:50%;
+        color:#fff;
+    }
     .samui img{
         height: 500px;
         text-align: center;
     }
-    .kari img{
-        height: 500px;
+    .mask4 .caption4 {
+        font-size:1rem;
         text-align: center;
+        padding-top:50%;
+        color:#fff;
     }
     
     .tiaki img{
