@@ -2,6 +2,23 @@
 *{
     text-align: center;
 }
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* 背景色の設定 */
+    background-color: #ffffff;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+  }
 body {
     padding-top: 60px; /* ヘッダーの高さ分の余白をいれ、うしろの要素が隠れないようにする */
 }
@@ -20,7 +37,7 @@ body {
     position: fixed; /*** ← fixedで固定 ***/
     width: 100%; 
     height: 60px; 
-    background: rgba(0,0,0, 0.5); 
+    background: rgba(0,0,0, 0.4); 
     padding: 20px 60px; 
     box-sizing: border-box;
     top: 0; 
@@ -35,7 +52,10 @@ body {
 }
 header h1{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 header .nav .menu {
     display: flex; 
@@ -44,13 +64,18 @@ header .nav .menu {
 header .nav .menu li {
     list-style: none; 
     margin-left: 40px;
+    
 }
 
 header .nav .menu li a{
-   color: #e44343;
+   color: #c84242;
    font-weight:bold;
    text-decoration: none;
    font-size: 1rem;
+   font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .hero{
@@ -65,18 +90,14 @@ header .nav .menu li a{
   }
   .hero h1{
     font-size: 2.5rem;
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 800;
+    font-family: "Rampart One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     position: absolute;
     top: 58%;
     left: 3%;
     color: #fff;
-    text-shadow:1px 1px 0 #000, -1px -1px 0 #000,
-              -1px 1px 0 #000, 1px -1px 0 #000,
-              0px 1px 0 #000,  0-1px 0 #000,
-              -1px 0 0 #000, 1px 0 0 #000;
+    
   }
   .profile{
     display: flex;
@@ -103,7 +124,41 @@ header .nav .menu li a{
     align-items: center;
   }
   .profile h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .profile p{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .skill{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    align-items: center;
+    margin: 50px;
+    background-color: rgba(255,255,255,0.5);
+    border: solid 3px;
+    border-radius: 10px;/*角の丸み*/
+    padding: 20px;
+  }
+  .skill h1{
+    font-size: 2.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 800;
+  }
+  .skill p{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
   .works{
     background-color: rgba(255,255,255,0.5);
@@ -402,6 +457,12 @@ header .nav .menu li a{
 .contact{
     padding:100px;
 }
+.contact p{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 .contact a{
     font-size: 2.5rem;
     font-family: "Work Sans", sans-serif;
@@ -474,24 +535,22 @@ header .nav .menu li a{
     }
     .hero h1{
         font-size: 5.5rem;
-        font-family: "Work Sans", sans-serif;
-        font-optical-sizing: auto;
+        font-family: "Rampart One", sans-serif;
+        font-weight: 400;
         font-style: normal;
-        font-weight: 800;
         position: absolute;
         top: 56%;
         left: 3%;
         color: #fff;
-        text-shadow:1px 1px 0 #000, -1px -1px 0 #000,
-                  -1px 1px 0 #000, 1px -1px 0 #000,
-                  0px 1px 0 #000,  0-1px 0 #000,
-                  -1px 0 0 #000, 1px 0 0 #000;
+        
       }
 }
 
 /* PC用のスタイル */
 @media (min-width: 901px){
-    
+    header .nav .menu li a{
+        font-size: 1.5rem;
+    }
     .houkago img{
         height: 500px;
         text-align: center;
@@ -566,17 +625,12 @@ header .nav .menu li a{
     }
     .hero h1{
         font-size: 8rem;
-        font-family: "Work Sans", sans-serif;
-        font-optical-sizing: auto;
+        font-family: "Rampart One", sans-serif;
+        font-weight: 400;
         font-style: normal;
-        font-weight: 800;
         position: absolute;
         top: 58%;
         left: 3%;
         color: #fff;
-        text-shadow:1px 1px 0 #000, -1px -1px 0 #000,
-                  -1px 1px 0 #000, 1px -1px 0 #000,
-                  0px 1px 0 #000,  0-1px 0 #000,
-                  -1px 0 0 #000, 1px 0 0 #000;
       }
 }

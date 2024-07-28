@@ -9,9 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Noto+Sans+JP:wght@100..900&family=Rampart+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <div class="pattern">
+        <div class="loading">
+            ローディング中…
+            </div>
         <header>
             <h1>Portfolio</h1>
             <nav class="nav">
@@ -34,8 +46,12 @@
         <img src="https://github.com/ItoAiri0/portfolio/blob/main/img/%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.jpg?raw=true" alt="アイコン">
         <h1>伊藤</h1>
         <p>愛知県在住。2004年生まれ。<br>
-            ゲームや漫画、アニメ、動画視聴、競馬が趣味。
+            ゲームや漫画、アニメ、動画視聴、競馬が趣味。 
         </p>
+    </section>
+    <section class="skill">
+        <h1>Skill</h1>
+        <p>CLIP STUDIO PAINT <br>Illustrator <br>Photoshop <br>iMovie</p>
     </section>
     <section class="works">
         <a id="works">Works</a>
@@ -104,4 +120,20 @@
     </section>
     </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+   $(function () {
+  function end_loading() {
+  // フェードアウトする時間
+    $('.loading').fadeOut(2000);
+  }
+  $(window).on('load', function () {
+    setTimeout(function () {
+      end_loading();
+  // ローディング画面を表示する時間
+    }, 2000)
+  })
+})
+</script>
 </html>
